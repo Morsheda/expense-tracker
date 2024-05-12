@@ -58,7 +58,7 @@ export const Form = ({ onSubmit, formData, onChange, onClose }) => {
               />
             </label>
           </div>
-          <button style={{ padding: '12px', borderRadius: '18px'}} className='btn btn-primary' type="submit" value={formData.btn}>
+          <button style={{ padding: '10px 28px', borderRadius: '18px'}} className='btn btn-success' type="submit" value={formData.btn}>
             Add
           </button>
         </form>

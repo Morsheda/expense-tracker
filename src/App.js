@@ -64,7 +64,7 @@ function App() {
     <div className="App">
       <Heading />
       <Cards expenses={expenses}/>
-      <button style={{ padding: '12px', borderRadius: '18px'}} className='btn btn-primary' onClick={() => setShowForm(true)}>+ Add Expense</button>
+      <button style={{ padding: '14px 22px', borderRadius: '18px'}} className='btn btn-success' onClick={() => setShowForm(true)}>+ Add Expense</button>
       <div className='row mt-3'>
         {showForm && (
           <Form
