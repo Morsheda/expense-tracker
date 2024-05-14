@@ -92,3 +92,42 @@ body, html {
 .card:hover {
   background-color: inherit;
 }
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #4f5252;
+  width: 30px;
+  height: 30px;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Graph & Progress Bar */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.graph-container {
+  width: 66.66%; /* 2/3 of the page width */
+}
+
+.progress-container {
+  width: 33.33%; /* 1/3 of the page width */
+  padding: 80px 80px;
+  display: flex;
+  align-items: center;
+}

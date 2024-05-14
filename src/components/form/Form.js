@@ -1,10 +1,11 @@
 import React from 'react';
+import '../../App.css';
 
 export const Form = ({ onSubmit, formData, onChange, onClose }) => {
   return (
     <div style={styles.modalOverlay}>
       <div style={styles.modal}>
-      <button style={styles.closeButton} onClick={onClose}>&times;</button>
+      <span className="close" onClick={onClose}>&times;</span>
         <form onSubmit={onSubmit} style={styles.form}>
           <div style={styles.inputGroup}>
             <label style={styles.label}>
@@ -87,24 +88,7 @@ const styles = {
     width: '100%',
     position: 'relative', // Ensure the close button is positioned relative to the modal
   },
-  closeButton: {
-    position: 'absolute',
-    top: '10px',
-    right: '10px',
-    background: '#d4d4d3',
-    border: 'none',
-    borderRadius: '50%',
-    cursor: 'pointer',
-    fontSize: '20px',
-    color: '#000',
-    width: '30px', // Set the width and height to make it round
-    height: '30px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
   form: {
-    display: 'flex',
     flexDirection: 'column',
   },
   inputGroup: {
@@ -119,5 +103,6 @@ const styles = {
     border: '1px solid #ccc',
     width: '100%',
     boxSizing: 'border-box',
+    minWidth: '200px',
   },
 };

@@ -4,12 +4,14 @@ import { Heading } from "./components/Heading";
 import { Form } from "./components/form/Form";
 import { Cards } from "./components/form/Cards";
 import { Table } from "./components/table/Table";
+import { ExpenseGraph } from "./components/table/ExpenseGraph";
 import React, { useState } from 'react';
 
 function App() {
   const [expenses, setExpenses] = useState([
-    { category: 'Groceries', amount: '1000', date: '2024-05-12', time: '10:00' },
-    { category: 'Transportation', amount: '500', date: '2024-05-11', time: '15:30' },
+    { category: 'Groceries', amount: '1000', date: '2024-05-02', time: '10:00' },
+    { category: 'Transportation', amount: '500', date: '2024-05-05', time: '15:30' },
+    { category: 'Transportation', amount: '500', date: '2024-05-06', time: '15:30' },
     { category: 'Donation', amount: '1500', date: '2024-05-11', time: '18:30' },
     { category: 'Gift', amount: '1500', date: '2024-05-11', time: '20:30' },
   ]);
@@ -76,6 +78,7 @@ function App() {
         )}
         {showWarning && <div className="alert alert-warning" role="alert">Expense deleted!</div>}
         <Table expenses={expenses} edited={edited} deleted={deleted} />
+        <ExpenseGraph expenses={expenses} />
       </div>
     </div>
   );

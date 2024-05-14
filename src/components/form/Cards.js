@@ -9,7 +9,7 @@ export const Cards = ({expenses}) => {
     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div className="card">
             <h2>Budget</h2>
-            <h6>Total Budget : $50,000.00</h6>
+            <h6>Total Budget : ${totalBudget.toFixed(2)}</h6>
         </div>
         <div className="card">
             <h2>Expense</h2>
