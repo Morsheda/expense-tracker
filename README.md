@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Find the app on 
+## Find the app on Vercel
 [Expense Tracker](https://expense-tracker-jade-alpha.vercel.app/)
 
 ## Available Scripts
